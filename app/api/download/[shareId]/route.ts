@@ -20,6 +20,11 @@ export async function GET(
       return NextResponse.json({ success: false, error: '文件不存在或已被删除' }, { status: 404 })
     }
 
+    // If file is protected, don't allow direct download
+    if (file.is_protected) {
+      return NextResponse.json({ success: false, error: '此文件需要密码才能下载' }, { status: 403 })
+    }
+
     // Increment download count
     await supabase
       .from('files')

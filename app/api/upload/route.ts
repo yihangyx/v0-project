@@ -2,12 +2,15 @@ import { put } from '@vercel/blob'
 import { NextRequest, NextResponse } from 'next/server'
 import { createClient } from '@/lib/supabase/server'
 import { generateShareId, MAX_FILE_SIZE } from '@/lib/file-utils'
+import bcrypt from 'bcryptjs'
 
 export async function POST(request: NextRequest) {
   try {
     const formData = await request.formData()
     const file = formData.get('file') as File
     const description = formData.get('description') as string | null
+    const password = formData.get('password') as string | null
+    const isProtected = formData.get('isProtected') === 'true'
 
     if (!file) {
       return NextResponse.json({ success: false, error: '请选择文件' }, { status: 400 })
@@ -25,6 +28,12 @@ export async function POST(request: NextRequest) {
     // Generate unique share ID
     const shareId = generateShareId()
 
+    // Hash password if protected
+    let passwordHash: string | null = null
+    if (isProtected && password) {
+      passwordHash = await bcrypt.hash(password, 10)
+    }
+
     // Save file metadata to Supabase
     const supabase = await createClient()
     const { data, error } = await supabase
@@ -37,6 +46,8 @@ export async function POST(request: NextRequest) {
         blob_url: blob.url,
         share_id: shareId,
         description: description || null,
+        is_protected: isProtected,
+        password_hash: passwordHash,
       })
       .select()
       .single()

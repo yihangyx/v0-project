@@ -8,6 +8,8 @@ export interface FileItem {
   share_id: string
   download_count: number
   description: string | null
+  is_protected: boolean
+  password_hash: string | null
   created_at: string
   updated_at: string
 }
@@ -29,6 +31,13 @@ export interface UploadResponse {
 }
 
 export interface ShareInfo {
-  file: FileItem
-  download_url: string
+  id: string
+  original_name: string
+  size: number
+  mime_type: string | null
+  download_count: number
+  description: string | null
+  is_protected: boolean
+  created_at: string
+  blob_url: string
 }
