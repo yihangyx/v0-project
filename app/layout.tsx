@@ -7,8 +7,8 @@ const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'v0 App',
-  description: 'Created with v0',
+  title: 'CloudDrive - 云端存储',
+  description: '安全、快速、便捷的个人云存储服务',
   generator: 'v0.app',
   icons: {
     icon: [
