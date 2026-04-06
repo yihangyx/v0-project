@@ -92,7 +92,7 @@ export function SharePageClient({ file, shareId }: SharePageClientProps) {
               <Cloud className="w-5 h-5 text-primary-foreground" />
             </div>
             <span className="text-xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-              CloudDrive
+              奕涵云存储
             </span>
           </Link>
         </div>
@@ -256,7 +256,7 @@ export function SharePageClient({ file, shareId }: SharePageClientProps) {
       <footer className="border-t border-border/50 bg-card/50 relative z-10">
         <div className="container mx-auto px-4 py-6">
           <p className="text-center text-sm text-muted-foreground flex items-center justify-center gap-1">
-            Made with <Heart className="w-4 h-4 text-primary fill-primary" /> by 奕涵
+            Made with <Heart className="w-4 h-4 text-primary fill-primary" /> by yihan
           </p>
         </div>
       </footer>
