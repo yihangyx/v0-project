@@ -68,11 +68,11 @@ export default function HomePage() {
         </div>
         <h1 className="text-4xl md:text-5xl font-bold mb-4 text-balance">
           <span className="bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent">
-            奕涵
+            奕涵云存储
           </span>
         </h1>
         <p className="text-muted-foreground text-lg max-w-2xl mx-auto mb-8 text-pretty">
-          浏览和下载分享的文件资源，安全快速，简单便捷
+                                 
         </p>
 
         {/* Search */}
@@ -179,7 +179,7 @@ export default function HomePage() {
       {/* Footer */}
       <footer className="border-t border-border/50 bg-card/50 py-8">
         <div className="container mx-auto px-4 text-center text-sm text-muted-foreground">
-          <p>© 2026 奕涵的临时邮箱 版权所有</p>
+          <p>© 2026 奕涵云存储版权所有</p>
         </div>
       </footer>
     </div>
