@@ -48,7 +48,7 @@ export default function HomePage() {
               <Cloud className="w-5 h-5 text-primary-foreground" />
             </div>
             <span className="text-xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-              CloudDrive
+              奕涵云存储2026
             </span>
           </Link>
           <Link href="/admin/login">
