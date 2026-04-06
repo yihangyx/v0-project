@@ -68,7 +68,7 @@ export default function HomePage() {
         </div>
         <h1 className="text-4xl md:text-5xl font-bold mb-4 text-balance">
           <span className="bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent">
-            文件资源中心
+            奕涵
           </span>
         </h1>
         <p className="text-muted-foreground text-lg max-w-2xl mx-auto mb-8 text-pretty">
