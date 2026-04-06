@@ -7,13 +7,13 @@ const _nunito = Nunito({ subsets: ["latin"], weight: ["400", "500", "600", "700"
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'CloudDrive - 云端存储',
+  title: '奕涵 - 云端存储',
   description: '安全、快速、便捷的个人云存储服务',
   generator: 'v0.app',
   icons: {
     icon: [
       {
-        url: '/icon-light-32x32.png',
+        url: 'https://s21.ax1x.com/2025/07/23/pVGli59.jpg',
         media: '(prefers-color-scheme: light)',
       },
       {
