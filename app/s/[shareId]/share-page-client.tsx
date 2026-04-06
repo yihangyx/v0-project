@@ -256,7 +256,7 @@ export function SharePageClient({ file, shareId }: SharePageClientProps) {
       <footer className="border-t border-border/50 bg-card/50 relative z-10">
         <div className="container mx-auto px-4 py-6">
           <p className="text-center text-sm text-muted-foreground flex items-center justify-center gap-1">
-            Made with <Heart className="w-4 h-4 text-primary fill-primary" /> by CloudDrive
+            Made with <Heart className="w-4 h-4 text-primary fill-primary" /> by 奕涵
           </p>
         </div>
       </footer>
