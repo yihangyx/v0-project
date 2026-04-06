@@ -179,7 +179,7 @@ export default function HomePage() {
       {/* Footer */}
       <footer className="border-t border-border/50 bg-card/50 py-8">
         <div className="container mx-auto px-4 text-center text-sm text-muted-foreground">
-          <p>CloudDrive - 安全便捷的文件分享平台</p>
+          <p>© 2026 奕涵的临时邮箱 版权所有</p>
         </div>
       </footer>
     </div>
