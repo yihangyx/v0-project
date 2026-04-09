@@ -119,9 +119,10 @@ export function FileList({ files, onDelete, showActions = true }: FileListProps)
                   <span>·</span>
                   <span>{formatDate(file.created_at)}</span>
                   <span>·</span>
+                  {/* 👇 这里已修改为固定 275 次下载 */}
                   <span className="flex items-center gap-1">
-                    <Eye className="h-3 w-3" />275
-                    {file.download_count} 次下载
+                    <Eye className="h-3 w-3" />
+                    275 次下载
                   </span>
                 </div>
                 {file.description && (
