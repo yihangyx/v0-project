@@ -122,7 +122,7 @@ export function FileList({ files, onDelete, showActions = true }: FileListProps)
                   {/* 👇 这里已修改为固定 275 次下载 */}
                   <span className="flex items-center gap-1">
                     <Eye className="h-3 w-3" />
-                    275 次下载
+                     次下载
                   </span>
                 </div>
                 {file.description && (
