@@ -82,7 +82,7 @@ export default function HomePage() {
             type="text"
             placeholder="搜索文件..."
             value={searchTerm}
-            onChange={(e) => setSearchTerm(e.value)}
+            onChange={(e) => setSearchTerm(e.target.value)}
             className="pl-12 h-12 rounded-full border-2 border-border/50 focus:border-primary/50 bg-card shadow-lg"
           />
         </div>
@@ -132,10 +132,9 @@ export default function HomePage() {
                           {formatFileSize(file.size)}
                         </span>
                         <span className="w-1 h-1 rounded-full bg-border" />
-                        {/* 固定下载次数 275 */}
                         <span className="flex items-center gap-1">
                           <Download className="w-3 h-3" />
-                          275
+                          {file.download_count}
                         </span>
                         {file.is_protected && (
                           <>
